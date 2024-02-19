@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet"href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function(){
+         $("a").on('click', function(event) {
+            if(this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html,body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    window.location.hash = hash;
+                });
+            }
+
+         });
+         
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+    <div class="banner" id="home">
+
+
+        <div class="navbar">
+            <div class="logo">Genalyn Mae Portfolio</div>
+            <ul>
+
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#myinfo"> MY INFO </a></li>
+                <li><a href="#myskills"> MY SKILLS </a></li>
+                <li><a href="#myexperiences"> MY EXPERIENCES </a></li>
+                <li><a href="#mygallery"> MY GALLERY </a></li>
+
+
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1> I'm Genalyn Mae Marbebe </h1>
+            <p> This is Genalyn you can call me gen Studying at PHINMA-UI.</p>
+
+            <div calss="buttons">
+                <button type="button"><span></span> MORE INFO </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--This code is for myinfO pages-->
+
+    <div class="about-section" id="myinfo">
+        <div class="heading">
+            <h1> ALL ABOUT ME </h1>
+        </div>
+
+
+        <div class="container">
+            <section class="about">
+              <div class="about-image">
+                <img src="img/G.jpg">
+        </div>
+
+
+        <div class="about-content">
+            <p>My name is GENALYN MAE A. MARBEBE I am 20 years young my hobbie is watching k-drama and I leave in Mambawi Alimodian Iloilo city
+                I am currently enrolled at PHINMA-UI pursuing a Bachelor of Science in Information Technology program.
+            </p>
+
+        </div>
+
+    </section>
+
+  </div>
+
+
+    <!--This code is for myskills page-->
+
+    <div class="blog-section" id="myskills">
+        
+        <div class="blog-section">
+    
+            <div class="section-content">
+    
+                <div class="title">
+                    <h2> MY SKILLS </h2>
+                </div>
+                <div class="cards">
+                    <div class="card">
+    
+                        <div class="image-section">
+                            <img src="img/pic.jpg">
+                        </div>
+                            
+                        <div class="article">
+                            <h4> ACTIVE LISTENER</h4>
+                            <p>If you have a problem im willing to listen.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+    
+                        <div class="image-section">
+                            <img src="img/ck.jpeg">
+                        </div>
+    
+                        <div class="article">
+                            <h4>Cooking </h4>
+                            <p>I like cooking because and make me happy when i can make a food for my family.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+    
+                        <div class="image-section">
+                            <img src="img/dn.jpeg">
+                        </div>
+    
+                        <div class="article">
+                            <h4> DANCING </h4>
+                            <p> I like watching tiktok and make my body active when im dancing.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+<!--My Experiences Page--->
+
+<div class="myexperiences" id="myexperiences">
+    <div class="about-section" id="myexperiences">
+        <div class="heading">
+            <h1> MY EXPERIENCE </h1>
+        </div>
+
+
+        <div class="container">
+            <section class="about">
+              <div class="about-image">
+                <img src="img/gd1.avif">
+        </div>
+
+
+        <div class="about-content">
+            <p>During my high school days, I tried to join a dance contest called Himud-os sang Alimodian.It was my first
+                time joining the contest.Even though I'm a beginner and not too good at dancing I tried my best and I enjoy it. 
+            </p>
+
+        </div>
+
+    </section>
+
+  </div>
+    
+    
+
+
+ <!--This code is for my gallery -->
+
+ <div class="gallery" id="mygallery">
+    
+    <input type="radio" name="photos" id="check1" checked>
+    <input type="radio" name="photos" id="check2" >
+    <input type="radio" name="photos" id="check3" >
+    <input type="radio" name="photos" id="check4" >
+
+    <div class="gallery-container">
+        <h1> MY PHOTO GALLERY </h1>
+        <div class="top-content">
+            <h3> Photo Gallery </h3>
+            <label for="check1"> My Photos </label>
+            <label for="check2"> My brother </label>
+            <label for="check3"> Friends </label>
+            <label for="check4"> Cousins </label>
+        </div>
+
+        <div class="photo-gallery">
+
+            <div class="pic Events">
+                <img src="img/ev.jpg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/fr.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/c.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/ev1.jpg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/fr1.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/c1.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/ev2.jpg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/fr2.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/c2.jpg">
+            </div>
+
+            <div class="pic Events">
+                <img src="img/ev3.jpg">
+            </div>
+
+            <div class="pic Bonding">
+                <img src="img/fr3.jpg">
+            </div>
+
+            <div class="pic Outing">
+                <img src="img/c3.jpg">
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+
+
+ <div class="testimony" id="mygallery">
+        
+<!--footer-->
+
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="copyright">Manage and Created by GENALYN @2023</p>
+    </footer>
+</div>
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction(){
+if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    mybutton.style.display = "block";
+    } else {
+            mybutton.style.display = "none";
+    } 
+}
+    
+    </script>
+
+
+</body>
+</html>
